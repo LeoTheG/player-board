@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import api from "./Api";
 function Games() {
-  const url = "https://api.twitch.tv/kraken/games/top";
+  const url = "https://api.twitch.tv/helix/games/top";
   const [games, setGames] = useState([]);
 
   // make sure the function only run once
   useEffect(() => {
     const fetchData = async () => {
       const result = await api.get(url);
-      console.log(result.data.top[0]);
+      console.log(result);
       setGames(result.data.top);
     };
     fetchData();
