@@ -11,14 +11,6 @@ function LiveStream({ match, location }) {
   if (location.state === undefined) {
     location.state = { gameID: "", channelName: "" };
   }
-  const url = `https://api.twitch.tv/kraken/streams/?game=${match.params.id}`;
-  const [streamData, setStreamData] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      //const result = await api.get(url);
-    };
-    fetchData();
-  }, []);
 
   console.log(location);
   return (
