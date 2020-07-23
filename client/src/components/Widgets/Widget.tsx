@@ -8,6 +8,10 @@ import { JokeWidget } from "./JokeWidget";
 import LeaderboardWidget from "./LeaderboardWidget/LeaderboardWidget";
 import Tts from "./TextToSpeechWidget/tts";
 import { useDrag } from "react-dnd";
+import { BalancesWidget } from "./BalancesWidget";
+import { BearFaucetWidget } from "./BearFaucetWidget";
+import { TransferWidget } from "./TransferWidget";
+//import { AudioPlayerWidget } from "./AudioPlayerWidget";
 
 export interface IWidgetProps {
   type: WidgetTypes;
@@ -50,8 +54,19 @@ const renderWidget = (type: WidgetTypes) => {
       return <LeaderboardWidget />;
     case WidgetTypes.celebrity:
       return <CelebrityWidget />;
+<<<<<<< HEAD
     case WidgetTypes.texttospeech:
       return <Tts />;
+=======
+    case WidgetTypes.balances:
+      return <BalancesWidget />
+    case WidgetTypes.bear_faucet:
+      return <BearFaucetWidget />
+    case WidgetTypes.bear_transfer:
+      return <TransferWidget />
+    /*case WidgetTypes.audio_player:
+      return <AudioPlayerWidget />*/
+>>>>>>> 2d4f412e0e2144a4c058741dce6f09bfc0a909f4
     // add widget case here for new widget types
     default:
       return null;

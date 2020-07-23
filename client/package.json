@@ -1,7 +1,7 @@
 {
   "homepage": "http://leotheg.github.io/player-board",
   "name": "client",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.10.0",
@@ -26,17 +26,22 @@
     "react-dnd-multi-backend": "^6.0.2",
     "react-dnd-touch-backend": "^11.1.3",
     "react-dom": "^16.13.1",
+    "react-json-to-table": "^0.1.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "readline-sync": "^1.4.10",
     "request-promise": "^4.2.5",
     "typescript": "~3.7.2",
     "uuid": "^8.1.0",
+<<<<<<< HEAD
     "xmlbuilder": "^15.1.1"
+=======
+    "web3": "^1.2.9"
+>>>>>>> 2d4f412e0e2144a4c058741dce6f09bfc0a909f4
   },
   "scripts": {
-    "start": "REACT_APP_VERSION=$npm_package_version react-scripts start",
-    "build": "REACT_APP_VERSION=$npm_package_version react-scripts build",
+    "start": "cross-env REACT_APP_VERSION=$npm_package_version react-scripts start",
+    "build": "cross-env REACT_APP_VERSION=$npm_package_version react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -60,6 +65,7 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.1.5",
     "@types/uuid": "^8.0.0",
+    "cross-env": "^7.0.2",
     "gh-pages": "^3.1.0",
     "prettier": "^2.0.5"
   },

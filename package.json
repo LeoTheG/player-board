@@ -4,7 +4,7 @@
   "scripts": {
     "pre-commit": "lint-staged",
     "postinstall": "cd client && npm install",
-    "build": "PUBLIC_URL=https://yeestudio.net npm run build --prefix client"
+    "build": "cross-env PUBLIC_URL=https://yeestudio.net npm run build --prefix client"
   },
   "pre-commit": [
     "pre-commit"
@@ -15,6 +15,7 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "lint-staged": "^10.2.2",
     "pre-commit": "^1.2.2",
     "prettier": "^2.0.5"
