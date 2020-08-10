@@ -33,11 +33,8 @@
     "request-promise": "^4.2.5",
     "typescript": "~3.7.2",
     "uuid": "^8.1.0",
-<<<<<<< HEAD
-    "xmlbuilder": "^15.1.1"
-=======
+    "xmlbuilder": "^15.1.1",
     "web3": "^1.2.9"
->>>>>>> 2d4f412e0e2144a4c058741dce6f09bfc0a909f4
   },
   "scripts": {
     "start": "cross-env REACT_APP_VERSION=$npm_package_version react-scripts start",

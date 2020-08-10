@@ -8,10 +8,9 @@ function TextToSpeech() {
   const [text, setText] = useState("");
   const [api, setApi] = useState(0);
 
-  const api_list = [microsoft, mozilla]; // Add your imported function to the list
-
+  const api_list = [new microsoft(), new mozilla()]; // Add your imported function to the list
   const handleClick = () => {
-    api_list[api](text);
+    api_list[api].play(text);
   };
   const handleChange = (event) => {
     setText(event.target.value);
@@ -84,12 +83,16 @@ function TextToSpeech() {
         </div>
 
         <div
+          download
+          href="audio"
           style={{
             marginLeft: "20px",
             float: "left",
             cursor: "pointer",
           }}
-          onClick={null}
+          onClick={() => {
+            api_list[api].download(text);
+          }}
         >
           <CloudDownload
             style={{

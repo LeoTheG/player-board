@@ -54,19 +54,10 @@ const renderWidget = (type: WidgetTypes) => {
       return <LeaderboardWidget />;
     case WidgetTypes.celebrity:
       return <CelebrityWidget />;
-<<<<<<< HEAD
     case WidgetTypes.texttospeech:
       return <Tts />;
-=======
-    case WidgetTypes.balances:
-      return <BalancesWidget />
-    case WidgetTypes.bear_faucet:
-      return <BearFaucetWidget />
-    case WidgetTypes.bear_transfer:
-      return <TransferWidget />
     /*case WidgetTypes.audio_player:
       return <AudioPlayerWidget />*/
->>>>>>> 2d4f412e0e2144a4c058741dce6f09bfc0a909f4
     // add widget case here for new widget types
     default:
       return null;
